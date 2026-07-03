@@ -1,0 +1,252 @@
+:root {
+  --primary: #004d40;   /* deep green */
+  --secondary: #ffb300; /* solar yellow */
+  --accent: #0288d1;    /* sky blue */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+nav {
+  background: #00796b;
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 2em;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3em;
+  background: var(--secondary);
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.3em;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 3em;
+  background: #f1f1f1;
+}
+
+.services h2 {
+  color: var(--primary);
+  margin-bottom: 1em;
+}
+
+.services .grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.services .grid div {
+  width: 30%;
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  padding: 3em;
+  background: var(--accent);
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.cta p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.cta .btn {
+  background: var(--secondary);
+  color: #000;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta .btn:hover {
+  background: #ffc107;
+}
+
+/* Mission Section */
+.mission {
+  padding: 3em;
+  background: #fff;
+  text-align: center;
+}
+
+.mission h2 {
+  color: var(--primary);
+  margin-bottom: 1em;
+}
+
+.mission p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Projects Section */
+.projects {
+  text-align: center;
+  padding: 3em;
+  background: #f9f9f9;
+}
+
+.projects h2 {
+  color: var(--primary);
+  margin-bottom: 1em;
+}
+
+.projects .grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.projects .grid div {
+  width: 30%;
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.projects img {
+  margin-bottom: 1em;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact input, 
+.contact textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #005fa3
+/* Thank You Page */
+.thankyou {
+  text-align: center;
+  padding: 3em;
+  background: var(--secondary);
+  color: #fff;
+}
+
+.thankyou h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.thankyou p {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.thankyou a.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.thankyou a.btn:hover {
+  background: #005fa3;
+}
