@@ -250,3 +250,33 @@ footer {
 .thankyou a.btn:hover {
   background: #005fa3;
 }
+/* Thank You Page */
+.thankyou {
+  text-align: center;
+  padding: 3em;
+  background: var(--secondary);
+  color: #fff;
+}
+
+.thankyou h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.thankyou p {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.thankyou a.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.thankyou a.btn:hover {
+  background: #005fa3;
+}
