@@ -1,282 +1,217 @@
-:root {
-  --primary: #004d40;   /* deep green */
-  --secondary: #ffb300; /* solar yellow */
-  --accent: #0288d1;    /* sky blue */
-}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #000;
 }
 
-/* Header & Navigation */
-header {
-  background: var(--primary);
-  color: white;
+/* Header & Nav with Image Background */
+header, nav {
+  background: url("images/header-solar.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
   text-align: center;
   padding: 1em;
+  position: relative;
 }
-
-nav {
-  background: #00796b;
-  padding: 0.5em;
-  text-align: center;
+header::before, nav::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
 }
-
+header h1, nav a {
+  position: relative;
+  z-index: 1;
+}
 nav a {
-  color: white;
-  margin: 0 15px;
+  color: #f1c40f;
+  margin: 0 1em;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
+nav a:hover { color: #fff; }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
-main {
-  padding: 2em;
-}
-
-/* Footer */
-footer {
-  background: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
-
-/* Hero Section */
+/* Hero Section (Powering the Future) */
 .hero {
+  background: url("images/hero-solar.jpg") no-repeat center center;
+  background-size: cover;
   text-align: center;
-  padding: 3em;
-  background: var(--secondary);
+  padding: 6em 2em;
+  position: relative;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+.hero h2, .hero p {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: rgba(0,0,0,0.8); /* black box */
+  padding: 0.5em 1em;
+  border-radius: 4px;
   color: #fff;
 }
 
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.hero p {
-  font-size: 1.3em;
-}
-
-/* Services Section */
+/* Services Section (Our Services) */
 .services {
-  text-align: center;
-  padding: 3em;
-  background: #f1f1f1;
+  background: url("images/services-installation.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 4em 2em;
+  position: relative;
+  color: #000;
 }
-
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.7);
+  z-index: 0;
+}
 .services h2 {
-  color: var(--primary);
+  position: relative;
+  z-index: 1;
+  text-align: center;
   margin-bottom: 1em;
+  display: inline-block;
+  background: rgba(255,255,255,0.9); /* white box */
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  color: #000;
 }
-
 .services .grid {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.services .grid div {
-  width: 30%;
-  background: #fff;
-  padding: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
 }
 
 /* Call to Action */
 .cta {
+  background: url("images/cta-sunlight.jpg") no-repeat center center;
+  background-size: cover;
   text-align: center;
-  padding: 3em;
-  background: var(--accent);
-  color: #fff;
-}
-
-.cta h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-.cta p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-
-.cta .btn {
-  background: var(--secondary);
+  padding: 4em 2em;
   color: #000;
-  padding: 0.8em 1.5em;
+}
+.cta h2, .cta p {
+  background: rgba(255,255,255,0.7);
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+}
+.cta .btn {
+  background: #333;
+  color: #fff;
+  padding: 0.7em 1.5em;
   text-decoration: none;
+  border-radius: 4px;
   font-weight: bold;
-  border-radius: 5px;
+  transition: background 0.3s ease;
 }
-
-.cta .btn:hover {
-  background: #ffc107;
-}
+.cta .btn:hover { background: #000; }
 
 /* Mission Section */
 .mission {
-  padding: 3em;
-  background: #fff;
+  background: url("images/mission-community.jpg") no-repeat center center;
+  background-size: cover;
   text-align: center;
+  padding: 4em 2em;
+  position: relative;
+  color: #fff;
 }
-
-.mission h2 {
-  color: var(--primary);
-  margin-bottom: 1em;
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
 }
-
-.mission p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #444;
-  max-width: 800px;
-  margin: 0 auto;
+.mission h2, .mission p {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: rgba(0,0,0,0.8); /* black box */
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  color: #fff;
 }
 
 /* Projects Section */
 .projects {
-  text-align: center;
-  padding: 3em;
-  background: #f9f9f9;
+  background: url("images/projects-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 4em 2em;
+  color: #000;
 }
-
 .projects h2 {
-  color: var(--primary);
+  text-align: center;
   margin-bottom: 1em;
+  background: rgba(255,255,255,0.7);
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
 }
-
 .projects .grid {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
 }
-
-.projects .grid div {
-  width: 30%;
-  background: #fff;
-  padding: 1em;
+.project-card {
+  background: rgba(255,255,255,0.9);
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
-.projects img {
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
   margin-bottom: 1em;
-  max-width: 100%;
-  border-radius: 6px;
 }
 
 /* Contact Section */
 .contact {
-  padding: 40px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  margin: 40px 0;
+  background: url("images/contact-solar.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 4em 2em;
+  color: #000;
 }
-
 .contact h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
+  background: rgba(255,255,255,0.7);
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
 }
-
 .contact form {
   max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  margin: auto;
+  background: rgba(255,255,255,0.9);
+  padding: 2em;
+  border-radius: 8px;
 }
 
-.contact label {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.contact input, 
-.contact textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact button {
-  margin-top: 20px;
-  padding: 12px;
-  background: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background: #005fa3
-/* Thank You Page */
-.thankyou {
+/* Footer */
+footer {
+  background: url("images/footer-sunset.jpg") no-repeat center center;
+  background-size: cover;
+  color: #000;
   text-align: center;
-  padding: 3em;
-  background: var(--secondary);
-  color: #fff;
-}
-
-.thankyou h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.thankyou p {
-  font-size: 1.3em;
-  margin-bottom: 1em;
-}
-
-.thankyou a.btn {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.8em 1.5em;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.thankyou a.btn:hover {
-  background: #005fa3;
-}
-/* Thank You Page */
-.thankyou {
-  text-align: center;
-  padding: 3em;
-  background: var(--secondary);
-  color: #fff;
-}
-
-.thankyou h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.thankyou p {
-  font-size: 1.3em;
-  margin-bottom: 1em;
-}
-
-.thankyou a.btn {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.8em 1.5em;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.thankyou a.btn:hover {
-  background: #005fa3;
+  padding: 1em;
+  background-blend-mode: multiply;
 }
